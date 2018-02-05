@@ -6,3 +6,16 @@ provision,
 halt,
 ssh,
 reload.
+
+
+is git hubo.
+
+git clone http://link nameApp
+cd nameApp
+composer install
+cp .env.example .env
+php artisan key:generate
+change hosts file
+change homestead ip:
+192.168.10.10 homestead.app
+192.168.10.10 homestead2.app
