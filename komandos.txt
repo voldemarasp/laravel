@@ -1,0 +1,7 @@
+vagrant komandos:
+
+up,
+destroy,
+provision,
+halt,
+reload.
