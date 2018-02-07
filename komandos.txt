@@ -7,8 +7,9 @@ halt,
 ssh,
 reload.
 
+------------------------------
 
-is git hubo.
+is git hubo:
 
 git clone http://link nameApp
 cd nameApp
@@ -19,3 +20,30 @@ change hosts file
 change homestead ip:
 192.168.10.10 homestead.app
 192.168.10.10 homestead2.app
+vagrant reload
+
+--------------------------
+
+sukurti controleri:
+
+cd dir
+php artisan make:controller nameControler
+
+--------------------------
+
+sukurti mysql lenteles:
+
+cd ~
+
+php artisan make:migration comments
+
+php artisan migrate
+
+cd homestead -> mysql homestead -> show tables;
+
+exit;
+
+----------------------------
+
+
+
