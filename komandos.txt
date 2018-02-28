@@ -1,6 +1,6 @@
 vagrant komandos:
 
-up,
+up, ( cd homestead )
 destroy,
 provision,
 halt,
@@ -43,7 +43,36 @@ cd homestead -> mysql homestead -> show tables;
 
 exit;
 
+php artisan migrate:refresh ( patikrinti ar dropina )
+
+composer require doctrine/dbal ( kai keiti laukeliu duomenis pvz varchar 255 - varchar 50 )
+
+
 ----------------------------
 
+Ikelti i duomenu baze duomenis
+
+php artisan make:seeder PostsSeeder ( susikurti seederi )
+php artisan db:seed --class=PostsSeeder ( ikelti i duomenu baze informacija )
+
+mysql homestead(db pavadinimas)
+SELECT * FROM posts(table namas)
+
+-----------------------------
+
+Paleisti scss faila
+
+npm install
+
+npm run dev
+
+npm run watch - stebi is karto pakeitimus scss faile
+
+
+-----------------
+
+Facebook login
+
+composer require laravel/socialite
 
 
