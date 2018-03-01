@@ -60,7 +60,7 @@ SELECT * FROM posts(table namas)
 
 -----------------------------
 
-Paleisti scss faila
+Paleisti scss ir JS faila
 
 npm install
 
@@ -74,5 +74,24 @@ npm run watch - stebi is karto pakeitimus scss faile
 Facebook login
 
 composer require laravel/socialite
+
+
+-------------------
+
+ composer require barryvdh/laravel-debugbar
+
+------------------------
+Hostinimas i interneto vizija
+
+susikelti failus, import duombaze, .env failas, public_html istrinti ir public laravelio pervadinti i public_html;
+
+mysqldump dbname > db.sql ( viska atlikti homestead )
+
+susikurti laikina routa nuotraukom ir failams:
+
+Route::get('/generate-symlink', function () {
+symlink(storage_path('app/public'), public_path('storage'));
+});
+
 
 
